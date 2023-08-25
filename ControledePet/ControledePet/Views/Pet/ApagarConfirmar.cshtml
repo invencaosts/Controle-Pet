@@ -1,0 +1,13 @@
+﻿@model PetModel
+@{
+    ViewData["Title"] = "Apagar Pets";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Tem certeza que deseja apagar o Pet(@Model.Nome)?</h2>
+</div>
+<br />
+<div class="d-grid gap-2">
+    <a role="button" asp-controller="Pet" asp-route-id="@Model.Id" class="btn btn-danger" asp-action="Apagar">Confirmar</a>
+    <a role="button" asp-controller="Pet" class="btn btn-success" asp-action="Index">Cancelar</a>
+</div>

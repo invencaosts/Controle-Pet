@@ -1,0 +1,42 @@
+﻿@model List<PetModel>
+@{
+    ViewData["Title"] = "lista de Pets";
+}
+
+<div class="text-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a role="button" class="btn btn-success" asp-controller="Pet" asp-action="Criar">Adicionar Pet</a>
+    </div>
+    <h1 class="display-4">Lista de Pets</h1>
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Raça</th>
+                <th scope="col">Gênero</th>
+                <th scope="col">Operações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model !=null && Model.Any())
+            {
+                foreach (PetModel pet in Model)
+                {
+                    <tr>
+                        <th scope="row">@pet.Id</th>
+                        <td>@pet.Nome</td>
+                        <td>@pet.Raca</td>
+                        <td>@pet.Genero</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-primary" asp-route-id="@pet.Id" role="button" asp-controller="Pet" asp-action="Editar">Editar</a>
+                                <a class="btn btn-danger" asp-route-id="@pet.Id" role="button" asp-controller="Pet" asp-action="ApagarConfirmar">Deletar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
