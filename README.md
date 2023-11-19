@@ -22,3 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O Controle de Pet é uma aplicação web desenvolvida para facilitar a gerencia de petshop, de maneira que permite facilmente o cadastro de pets que estejam sobre responsabilidade do estabelecimento, e também de serviços ofertados pelo estabelecimento.
+
+## 🔐 Licença
+
+Este projeto está sob licença MIT.
