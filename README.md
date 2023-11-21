@@ -5,8 +5,9 @@ Controle de Pet é um site criado para me auxiliar nos estudos da tecnologia ASP
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a> |
+  <a href="#-projeto">Projeto</a> |
+  <a href="#-licença">Licença</a>
 </p>
 <br>
 
